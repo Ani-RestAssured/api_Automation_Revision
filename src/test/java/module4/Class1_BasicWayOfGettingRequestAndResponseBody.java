@@ -9,7 +9,7 @@ public class Class1_BasicWayOfGettingRequestAndResponseBody {
 /*Pass URI
 * Attach Params using queryParam
 * Attach Header using headerr
-* Attach Body using body from a static method of another class
+* Attach JSON Body from a static method of another class
 * Validate Response Code
 * Validate Header
 * Validate Body
