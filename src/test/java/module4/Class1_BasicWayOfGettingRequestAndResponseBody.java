@@ -2,7 +2,7 @@ package module4;
 
 import io.restassured.RestAssured;
 import static io.restassured.RestAssured.*;
-import file.Payload;
+import utils.Payload;
 import static org.hamcrest.Matchers.*;
 public class Class1_BasicWayOfGettingRequestAndResponseBody {
 

@@ -3,7 +3,7 @@ package module4;
 import io.restassured.RestAssured;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
-import file.Payload;
+import utils.Payload;
 import io.restassured.path.json.JsonPath;
 
 public class Class2_BasicWayOfGettingRequestBodyAndExtractingResponseUsingJsonPath {

@@ -5,7 +5,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.equalTo;
 import org.testng.Assert;
 import io.restassured.path.json.JsonPath;
-import file.Payload;
+import utils.Payload;
 
 public class Class3_BasicWayOfGettingRequestBodyAndExtractingResponseUsingJsonPathAndUsingResponseForNextRequest {
 
