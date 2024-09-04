@@ -1,14 +1,17 @@
 package module4;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import pojo.AddPlace;
 import java.util.List;
 import java.util.ArrayList;
 import pojo.location;
+import utils.StringToJson;
+
 import static io.restassured.RestAssured.*;
 
-public class Class8_SerializingRequestBodyUsingPOJOAndConvertingResponseToString {
+public class Class8_SerializingRequestBodyUsingPOJOAndConvertingResponseToStringToJson {
 
     public static void main (String[] args)
     {
@@ -38,7 +41,10 @@ public class Class8_SerializingRequestBodyUsingPOJOAndConvertingResponseToString
                 when().post("/maps/api/place/add/json").
                 then().assertThat().statusCode(200).extract().response();
 
-        String responseString = res.asString();
-        System.out.println(responseString);
+        JsonPath js = StringToJson.convert(res.toString());
+
+        //   String id = (js.get("ID"));
+
+        System.out.println(js);
     }
 }
