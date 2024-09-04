@@ -1,4 +1,4 @@
-package module4;
+package classNotes;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
